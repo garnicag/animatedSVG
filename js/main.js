@@ -4,12 +4,17 @@ setInterval(function() {
     var container = $('.animatedBkg svg'),
         items = container.find('polyline'),
         numberOfItems = items.length,
-        randomSel;
+        randomSel,
+        randomColor;
 
     function randomSel() {
-        return Math.floor((Math.random() * numberOfItems));
+        return Math.floor(Math.random() * numberOfItems);
     };
 
-    items.eq(randomSel()).attr('class', 'animFadeIn');
+    randomColor = function() {
+    	return '#' + Math.floor(Math.random() * 16777215).toString(16);
+    };
+
+    items.eq(randomSel()).attr('class', 'animFadeIn').attr('fill', randomColor);
     items.eq(randomSel()).attr('class', 'animFadeOut');
 }, animationSpeed);
