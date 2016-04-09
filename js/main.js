@@ -13,8 +13,6 @@ setInterval(function() {
     	return '#' + Math.floor(Math.random() * 16777215).toString(16);
     };
 
-    console.log(randomColor());
-
     items.eq(randomSel()).attr('class', 'animFadeIn').attr('fill', randomColor());
     items.eq(randomSel()).attr('class', 'animFadeOut');
 
