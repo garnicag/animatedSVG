@@ -22,11 +22,11 @@ html, body {
 }
 
 .animFadeIn {
-	animation: fadeIn 1s ease;
+	animation: fadeIn 3s ease;
 }
 
 .animFadeOut {
-	animation: fadeOut 1s ease;
+	animation: fadeOut 3s ease;
 }
 
 @keyframes fadeOut {

@@ -1,4 +1,4 @@
-var animationSpeed = 8;
+var animationSpeed = 80;
 
 setInterval(function() {
     var container = $('.animatedBkg svg'),
